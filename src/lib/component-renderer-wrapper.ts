@@ -6,7 +6,6 @@ export class ComponentRendererWrapper implements CellRendererIf {
 
   constructor(
     private readonly Component: any
-    //private readonly appContext: AppContext | null
   ) {
     console.info(Component);
   }
@@ -36,25 +35,5 @@ export class ComponentRendererWrapper implements CellRendererIf {
     };
   }
 
-
-  // private mount(
-  //   component: any,
-  //   props: (Data & VNodeProps) | null,
-  //   appContext: AppContext | null,
-  //   cellDiv: HTMLDivElement
-  // ) {
-  //   let vNode: VNode = createVNode(component, props);
-  //
-  //   vNode.appContext = appContext;
-  //   render(vNode, cellDiv);
-  //
-  //   const cleanupFn = () => {
-  //     if (cellDiv) {
-  //       render(null, cellDiv);
-  //     }
-  //   };
-  //
-  //   return cleanupFn;
-  // }
 
 }

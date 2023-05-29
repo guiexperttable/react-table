@@ -14,7 +14,7 @@ export type GeCheckboxEventFn = (evt: any[]) => {};
 export type GeTableReadyEventFn = (evt: TableApi) => {};
 export type GeModelChangeEventFn = (evt: GeModelChangeEvent) => {};
 
-export interface ReactTableProps {
+export interface GuiexpertTableProps {
   tableModel: TableModelIf,
   tableOptions?: TableOptions,
   mouseMoved?: GeMouseEventFn,
@@ -27,7 +27,7 @@ export interface ReactTableProps {
   tableReady?: GeTableReadyEventFn
 }
 
-export function ReactTable(
+export function GuiexpertTable(
   {
     tableModel,
     tableOptions = new TableOptions(),
@@ -39,7 +39,7 @@ export function ReactTable(
     mouseDragging,
     mouseDraggingEnd,
     tableReady
-  }: ReactTableProps) {
+  }: GuiexpertTableProps) {
 
   const myContainer = useRef(null);
   let initialized = false;
@@ -121,6 +121,6 @@ export function ReactTable(
   );
 }
 
-export default ReactTable;
+export default GuiexpertTable;
 
 
